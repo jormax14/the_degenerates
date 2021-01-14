@@ -1,32 +1,42 @@
-﻿ID,Season,League
-700,2011,Premier League
-699,2012,Premier League
-698,2013,Premier League
-697,2014,Premier League
-696,2015,Premier League
-56,2016,Premier League
-37,2017,Premier League
-2,2018,Premier League
-524,2019,Premier League
-2790,2020,Premier League
-2058,2011,Championship
-2057,2012,Championship
-2056,2013,Championship
-2055,2014,Championship
-1651,2015,Championship
-57,2016,Championship
-38,2017,Championship
-3,2018,Championship
-565,2019,Championship
-2794,2020,Championship
-735,2010,Primera Division
-734,2011,Primera Division
-733,2012,Primera Division
-732,2013,Primera Division
-731,2014,Primera Division
-730,2015,Primera Division
-64,2016,Primera Division
-30,2017,Primera Division
-87,2018,Primera Division
-755,2019,Primera Division
-2833,2020,Primera Division
+﻿ID,Season,League,Country
+700,2011,Premier League,UK
+699,2012,Premier League,UK
+698,2013,Premier League,UK
+697,2014,Premier League,UK
+696,2015,Premier League,UK
+56,2016,Premier League,UK
+37,2017,Premier League,UK
+2,2018,Premier League,UK
+524,2019,Premier League,UK
+2790,2020,Premier League,UK
+2058,2011,Championship,UK
+2057,2012,Championship,UK
+2056,2013,Championship,UK
+2055,2014,Championship,UK
+1651,2015,Championship,UK
+57,2016,Championship,UK
+38,2017,Championship,UK
+3,2018,Championship,UK
+565,2019,Championship,UK
+2794,2020,Championship,UK
+735,2010,Primera Division,ES
+734,2011,Primera Division,ES
+733,2012,Primera Division,ES
+732,2013,Primera Division,ES
+731,2014,Primera Division,ES
+730,2015,Primera Division,ES
+64,2016,Primera Division,ES
+30,2017,Primera Division,ES
+87,2018,Primera Division,ES
+755,2019,Primera Division,ES
+2833,2020,Primera Division,ES
+2652,2020,Ligue 2,FR
+2664,2020,Ligue 1,FR
+2857,2020,Serie A,IT
+2946,2020,Serie B,IT
+2743,2020,Bundesliga 2,DE
+2755,2020,Bundesliga 1,DE
+1396,2020,Serie A,BR
+1397,2020,Serie B,BR
+3023,2020,Primera Division,AR
+3052,2020,Primera B Nacional,AR
