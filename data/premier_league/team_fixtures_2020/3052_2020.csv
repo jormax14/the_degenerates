@@ -1,114 +1,23 @@
-,fixture_id,event_date,home_team,away_team,home_team_id,away_team_id,h_halftime_score,a_halftime_score,h_fulltime_score,a_fulltime_score
-0,647860,2020-11-28T20:10:00+00:00,Almagro,Gimnasia Jujuy,482,479,0,0,1,0
-1,647862,2020-11-28T20:10:00+00:00,Barracas Central,Independ. Rivadavia,2432,473,1,0,2,1
-2,647863,2020-11-28T20:10:00+00:00,Santamarina,Quilmes,475,480,1,0,1,0
-3,647864,2020-11-28T20:10:00+00:00,Brown DE Adrogue,All Boys,468,464,0,0,0,0
-4,647804,2020-11-28T20:10:00+00:00,Atlanta,Platense,1948,1064,0,0,0,2
-5,647806,2020-11-28T22:00:00+00:00,Sarmiento Junin,Villa Dalmine,474,481,0,0,0,0
-6,647861,2020-11-28T22:10:00+00:00,Instituto Cordoba,Chacarita Juniors,478,447,2,0,2,1
-7,647865,2020-11-28T22:10:00+00:00,Atletico Mitre,Belgrano Cordoba,466,440,0,0,0,0
-8,647867,2020-11-28T23:30:00+00:00,Alvarado,Guillermo Brown,1962,472,0,0,0,0
-9,647808,2020-11-29T12:00:00+00:00,San Martin Tucuman,Tigre,485,452,0,1,0,1
-10,647805,2020-11-29T20:10:00+00:00,CA Estudiantes,Agropecuario,1936,462,0,1,3,1
-11,647807,2020-11-29T20:10:00+00:00,Defensores De Belgrano,Gimnasia M.,1067,1066,0,0,0,0
-12,647866,2020-11-29T21:00:00+00:00,San Martin S.J.,Nueva Chicago,461,484,0,0,1,0
-13,647809,2020-11-30T20:10:00+00:00,Temperley,Ferro Carril Oeste,454,470,0,0,1,0
-14,647810,2020-11-30T20:10:00+00:00,Deportivo Riestra,Atletico DE Rafaela,476,465,2,2,3,3
-15,647811,2020-11-30T21:00:00+00:00,Estudiantes de Rio Cuarto,Deportivo Moron,2424,469,0,0,0,0
-16,647873,2020-12-04T00:10:00+00:00,Chacarita Juniors,Brown DE Adrogue,447,468,0,0,0,0
-17,647872,2020-12-04T22:10:00+00:00,Instituto Cordoba,Almagro,478,482,0,1,0,1
-18,647869,2020-12-05T20:10:00+00:00,Nueva Chicago,Alvarado,484,1962,0,3,2,5
-19,647874,2020-12-05T20:10:00+00:00,All Boys,Santamarina,464,475,0,0,1,0
-20,647875,2020-12-05T20:10:00+00:00,Quilmes,Gimnasia Jujuy,480,479,0,0,3,2
-21,647812,2020-12-05T20:10:00+00:00,CA Estudiantes,Estudiantes de Rio Cuarto,1936,2424,1,2,2,2
-22,647817,2020-12-05T20:10:00+00:00,Gimnasia M.,Sarmiento Junin,1066,474,1,0,2,3
-23,647818,2020-12-05T20:10:00+00:00,Villa Dalmine,Deportivo Riestra,481,476,0,1,1,1
-24,647868,2020-12-05T21:00:00+00:00,San Martin S.J.,Barracas Central,461,2432,0,0,0,0
-25,647871,2020-12-05T22:10:00+00:00,Belgrano Cordoba,Independ. Rivadavia,440,473,1,0,3,0
-26,647815,2020-12-05T22:10:00+00:00,Platense,Deportivo Moron,1064,469,0,0,1,1
-27,647870,2020-12-06T20:10:00+00:00,Guillermo Brown,Atletico Mitre,472,466,2,0,4,2
-28,647816,2020-12-06T20:10:00+00:00,Defensores De Belgrano,San Martin Tucuman,1067,485,0,0,0,1
-29,647813,2020-12-06T22:00:00+00:00,Agropecuario,Temperley,462,454,0,0,1,0
-30,647819,2020-12-07T20:10:00+00:00,Atletico DE Rafaela,Tigre,465,452,0,1,3,2
-31,647814,2020-12-07T22:10:00+00:00,Ferro Carril Oeste,Atlanta,470,1948,0,2,0,3
-32,647880,2020-12-11T20:10:00+00:00,Almagro,Quilmes,482,480,0,1,0,1
-33,647820,2020-12-11T22:10:00+00:00,Estudiantes de Rio Cuarto,Platense,2424,1064,0,1,1,1
-34,647876,2020-12-12T20:10:00+00:00,Barracas Central,Belgrano Cordoba,2432,440,0,0,1,0
-35,647877,2020-12-12T20:10:00+00:00,Independ. Rivadavia,Guillermo Brown,473,472,0,0,0,0
-36,647881,2020-12-12T20:10:00+00:00,Gimnasia Jujuy,All Boys,479,464,1,0,2,0
-37,647882,2020-12-12T20:10:00+00:00,Santamarina,Chacarita Juniors,475,447,2,0,3,1
-38,647883,2020-12-12T20:10:00+00:00,Brown DE Adrogue,Instituto Cordoba,468,478,1,1,1,1
-39,647821,2020-12-12T20:10:00+00:00,Deportivo Moron,Ferro Carril Oeste,469,470,1,2,2,3
-40,647879,2020-12-12T22:00:00+00:00,Alvarado,San Martin S.J.,1962,461,0,1,0,1
-41,647823,2020-12-13T20:10:00+00:00,Temperley,CA Estudiantes,454,1936,0,1,0,1
-42,647822,2020-12-13T20:10:00+00:00,Atlanta,Agropecuario,1948,462,2,2,2,3
-43,647824,2020-12-14T00:30:00+00:00,San Martin Tucuman,Atletico DE Rafaela,485,465,0,2,0,3
-44,647878,2020-12-14T12:00:00+00:00,Atletico Mitre,Nueva Chicago,466,484,1,0,1,1
-45,647826,2020-12-14T20:10:00+00:00,Deportivo Riestra,Gimnasia M.,476,1066,0,0,1,3
-46,647825,2020-12-15T00:10:00+00:00,Tigre,Villa Dalmine,452,481,2,0,3,1
-47,647829,2020-12-19T00:10:00+00:00,CA Estudiantes,Atlanta,1936,1948,0,1,3,3
-48,647832,2020-12-19T20:10:00+00:00,Sarmiento Junin,San Martin Tucuman,474,485,1,0,1,0
-49,647888,2020-12-19T20:10:00+00:00,Brown DE Adrogue,Almagro,468,482,0,1,0,1
-50,647890,2020-12-19T20:10:00+00:00,Chacarita Juniors,Gimnasia Jujuy,447,479,0,0,0,1
-51,647891,2020-12-19T20:10:00+00:00,All Boys,Quilmes,464,480,0,0,0,0
-52,647884,2020-12-19T22:00:00+00:00,Alvarado,Barracas Central,1962,2432,0,1,0,1
-53,647828,2020-12-20T00:30:00+00:00,Temperley,Estudiantes de Rio Cuarto,454,2424,0,0,0,0
-54,647833,2020-12-20T20:10:00+00:00,Defensores De Belgrano,Deportivo Riestra,1067,476,1,0,1,0
-55,647835,2020-12-20T20:10:00+00:00,Villa Dalmine,Atletico DE Rafaela,481,465,0,2,0,2
-56,647886,2020-12-20T20:10:00+00:00,Nueva Chicago,Independ. Rivadavia,484,473,1,0,1,2
-57,647887,2020-12-20T20:10:00+00:00,Guillermo Brown,Belgrano Cordoba,472,440,0,1,0,1
-58,647885,2020-12-20T23:30:00+00:00,San Martin S.J.,Atletico Mitre,461,466,0,0,1,1
-59,647831,2020-12-21T20:10:00+00:00,Ferro Carril Oeste,Platense,470,1064,1,2,1,2
-60,647889,2020-12-21T22:00:00+00:00,Instituto Cordoba,Santamarina,478,475,1,0,3,2
-61,647834,2020-12-22T00:30:00+00:00,Gimnasia M.,Tigre,1066,452,1,0,1,1
-62,647830,2020-12-23T00:10:00+00:00,Agropecuario,Deportivo Moron,462,469,0,0,1,0
-63,647839,2020-12-27T20:10:00+00:00,Atlanta,Temperley,1948,454,1,1,1,1
-64,647841,2020-12-27T20:10:00+00:00,Atletico DE Rafaela,Gimnasia M.,465,1066,2,0,2,1
-65,647892,2020-12-27T20:10:00+00:00,Barracas Central,Guillermo Brown,2432,472,2,0,2,1
-66,647896,2020-12-27T20:10:00+00:00,Almagro,All Boys,482,464,1,0,4,0
-67,647898,2020-12-27T20:10:00+00:00,Gimnasia Jujuy,Instituto Cordoba,479,478,0,0,1,1
-68,647893,2020-12-27T22:10:00+00:00,Belgrano Cordoba,Nueva Chicago,440,484,1,0,2,0
-69,647894,2020-12-27T22:10:00+00:00,Independ. Rivadavia,San Martin S.J.,473,461,0,0,0,1
-70,647836,2020-12-28T00:00:00+00:00,Estudiantes de Rio Cuarto,Ferro Carril Oeste,2424,470,1,0,2,1
-71,647895,2020-12-28T00:00:00+00:00,Atletico Mitre,Alvarado,466,1962,1,1,2,2
-72,647840,2020-12-28T00:30:00+00:00,San Martin Tucuman,Villa Dalmine,485,481,0,0,0,1
-73,647837,2020-12-28T20:10:00+00:00,Platense,Agropecuario,1064,462,1,0,1,1
-74,647843,2020-12-28T20:10:00+00:00,Deportivo Riestra,Sarmiento Junin,476,474,1,1,1,2
-75,647899,2020-12-28T20:10:00+00:00,Santamarina,Brown DE Adrogue,475,468,1,0,1,3
-76,647838,2020-12-29T00:30:00+00:00,Deportivo Moron,CA Estudiantes,469,1936,1,1,2,1
-77,647897,2020-12-29T20:10:00+00:00,Quilmes,Chacarita Juniors,480,447,2,0,3,2
-78,647842,2020-12-29T22:20:00+00:00,Tigre,Defensores De Belgrano,452,1067,0,0,0,1
-79,647900,2021-01-03T00:00:00+00:00,Atletico Mitre,Barracas Central,466,2432,1,0,1,1
-80,647844,2021-01-03T20:10:00+00:00,Atlanta,Estudiantes de Rio Cuarto,1948,2424,1,0,1,2
-81,647848,2021-01-03T20:10:00+00:00,Deportivo Riestra,San Martin Tucuman,476,485,0,0,0,0
-82,647849,2021-01-03T20:10:00+00:00,Sarmiento Junin,Tigre,474,452,1,0,1,1
-83,647903,2021-01-03T20:10:00+00:00,Nueva Chicago,Guillermo Brown,484,472,0,1,1,1
-84,647904,2021-01-03T20:10:00+00:00,Santamarina,Almagro,475,482,1,0,2,0
-85,647905,2021-01-03T20:10:00+00:00,Brown DE Adrogue,Gimnasia Jujuy,468,479,1,1,2,1
-86,647907,2021-01-03T20:10:00+00:00,Chacarita Juniors,All Boys,447,464,0,0,0,0
-87,647901,2021-01-03T21:00:00+00:00,Alvarado,Independ. Rivadavia,1962,473,0,0,3,0
-88,647902,2021-01-03T21:00:00+00:00,San Martin S.J.,Belgrano Cordoba,461,440,0,0,0,0
-89,647851,2021-01-03T21:10:00+00:00,Gimnasia M.,Villa Dalmine,1066,481,0,1,1,1
-90,647850,2021-01-03T22:10:00+00:00,Defensores De Belgrano,Atletico DE Rafaela,1067,465,1,0,2,0
-91,647845,2021-01-04T00:10:00+00:00,Temperley,Deportivo Moron,454,469,0,0,0,0
-92,647847,2021-01-04T20:10:00+00:00,Agropecuario,Ferro Carril Oeste,462,470,0,0,0,1
-93,647906,2021-01-04T22:00:00+00:00,Instituto Cordoba,Quilmes,478,480,0,1,2,1
-94,647846,2021-01-04T22:10:00+00:00,CA Estudiantes,Platense,1936,1064,0,1,1,1
-95,647827,2021-01-06T20:10:00+00:00,Sarmiento Junin,Defensores De Belgrano,474,1067,0,0,1,0
-96,647852,2021-01-10T20:10:00+00:00,Estudiantes de Rio Cuarto,Agropecuario,2424,462,0,0,4,0
-97,647853,2021-01-10T20:10:00+00:00,Ferro Carril Oeste,CA Estudiantes,470,1936,0,0,1,2
-98,647854,2021-01-10T20:10:00+00:00,Platense,Temperley,1064,454,2,0,2,1
-99,647855,2021-01-10T20:10:00+00:00,Deportivo Moron,Atlanta,469,1948,1,0,1,2
-100,647908,2021-01-10T20:10:00+00:00,Barracas Central,Nueva Chicago,2432,484,0,0,0,1
-101,647909,2021-01-10T20:10:00+00:00,Guillermo Brown,San Martin S.J.,472,461,0,0,0,1
-102,647910,2021-01-10T20:10:00+00:00,Belgrano Cordoba,Alvarado,440,1962,1,0,2,2
-103,647911,2021-01-10T20:10:00+00:00,Independ. Rivadavia,Atletico Mitre,473,466,0,1,0,1
-104,647856,2021-01-10T22:15:00+00:00,San Martin Tucuman,Gimnasia M.,485,1066,1,1,2,2
-105,647857,2021-01-10T22:15:00+00:00,Villa Dalmine,Defensores De Belgrano,481,1067,0,1,1,2
-106,647858,2021-01-10T22:15:00+00:00,Atletico DE Rafaela,Sarmiento Junin,465,474,0,0,0,0
-107,647859,2021-01-10T22:15:00+00:00,Tigre,Deportivo Riestra,452,476,1,0,1,2
-108,647912,2021-01-12T00:10:00+00:00,Almagro,Chacarita Juniors,482,447,0,1,0,2
-109,647913,2021-01-12T00:10:00+00:00,All Boys,Instituto Cordoba,464,478,0,0,2,2
-110,647914,2021-01-12T00:10:00+00:00,Quilmes,Brown DE Adrogue,480,468,1,0,1,0
-111,647915,2021-01-12T00:10:00+00:00,Gimnasia Jujuy,Santamarina,479,475,1,0,2,2
-112,656831,2021-01-16T00:00:00+00:00,Estudiantes de Rio Cuarto,Sarmiento Junin,2424,474,,,,
+fixture_id,event_date,home_team,away_team,home_team_id,away_team_id,h_halftime_score,a_halftime_score,h_fulltime_score,a_fulltime_score
+647845,2021-01-04T00:10:00+00:00,Temperley,Deportivo Moron,454,469,0,0,0,0
+647847,2021-01-04T20:10:00+00:00,Agropecuario,Ferro Carril Oeste,462,470,0,0,0,1
+647906,2021-01-04T22:00:00+00:00,Instituto Cordoba,Quilmes,478,480,0,1,2,1
+647846,2021-01-04T22:10:00+00:00,CA Estudiantes,Platense,1936,1064,0,1,1,1
+647827,2021-01-06T20:10:00+00:00,Sarmiento Junin,Defensores De Belgrano,474,1067,0,0,1,0
+647852,2021-01-10T20:10:00+00:00,Estudiantes de Rio Cuarto,Agropecuario,2424,462,0,0,4,0
+647853,2021-01-10T20:10:00+00:00,Ferro Carril Oeste,CA Estudiantes,470,1936,0,0,1,2
+647854,2021-01-10T20:10:00+00:00,Platense,Temperley,1064,454,2,0,2,1
+647855,2021-01-10T20:10:00+00:00,Deportivo Moron,Atlanta,469,1948,1,0,1,2
+647908,2021-01-10T20:10:00+00:00,Barracas Central,Nueva Chicago,2432,484,0,0,0,1
+647909,2021-01-10T20:10:00+00:00,Guillermo Brown,San Martin S.J.,472,461,0,0,0,1
+647910,2021-01-10T20:10:00+00:00,Belgrano Cordoba,Alvarado,440,1962,1,0,2,2
+647911,2021-01-10T20:10:00+00:00,Independ. Rivadavia,Atletico Mitre,473,466,0,1,0,1
+647856,2021-01-10T22:15:00+00:00,San Martin Tucuman,Gimnasia M.,485,1066,1,1,2,2
+647857,2021-01-10T22:15:00+00:00,Villa Dalmine,Defensores De Belgrano,481,1067,0,1,1,2
+647858,2021-01-10T22:15:00+00:00,Atletico DE Rafaela,Sarmiento Junin,465,474,0,0,0,0
+647859,2021-01-10T22:15:00+00:00,Tigre,Deportivo Riestra,452,476,1,0,1,2
+647912,2021-01-12T00:10:00+00:00,Almagro,Chacarita Juniors,482,447,0,1,0,2
+647913,2021-01-12T00:10:00+00:00,All Boys,Instituto Cordoba,464,478,0,0,2,2
+647914,2021-01-12T00:10:00+00:00,Quilmes,Brown DE Adrogue,480,468,1,0,1,0
+647915,2021-01-12T00:10:00+00:00,Gimnasia Jujuy,Santamarina,479,475,1,0,2,2
+656831,2021-01-16T00:00:00+00:00,Estudiantes de Rio Cuarto,Sarmiento Junin,2424,474,,,,
