@@ -34,6 +34,7 @@ def close(session_attributes, fulfillment_state, message):
 #   CUSTOM FUNCTIONS
 
 def buildTeamDF(teamID):
+    fixture_columns = ['fixture_id','h_result', 'event_date', 'venue', 'h_team', 'a_team', 'h_halftime_score', 'a_haftime_score', 'h_fulltime_score', 'a_fulltime_score','h_shot_on_goal','a_shot_on_goal','h_shot_off_goal','a_shot_off_goal','h_total_shots','a_total_shots','h_blocked_shots','a_blocked_shots','h_shots_inside_box','a_shots_inside_box','h_shots_outside_box','a_shots_outside_box','h_fouls','a_fouls','h_corner_kicks','a_corner_kicks','h_offsides','a_offsides','h_ball_possession','a_ball_possession','h_yellow_cards','a_yellow_cards','h_red_cards','a_red_cards','h_goalkeeper_saves','a_goalkeeper_saves','h_total_passes','a_total_passes','h_accurate_passes','a_accurate_passes','h_pass_percentage','a_pass_percentage']
     url_addr = f"https://api-football-v1.p.rapidapi.com/v2/fixtures/team/{teamID}/2790"
     headers = {
         'x-rapidapi-key': "3e890f9c4fmshbac87f967184a81p162525jsn1b11c02653ba",
@@ -125,7 +126,7 @@ def getNextFixture(teamID):
     response = requests.request("GET", url, headers=headers, data=payload)
     r_json = response.json()
     if r_json['api']['results'] != 0:
-        fixture = json['api']['fixtures'][-1]
+        fixture = r_json['api']['fixtures'][-1]
         return { 'home_team_id': fixture['homeTeam']['team_id'], 'home_team_name': fixture['homeTeam']['team_name'], 'away_team_id': fixture['awayTeam']['team_id'], 'away_team_name': fixture['awayTeam']['team_name'] }
     else:
         return "sorry, no info..."
