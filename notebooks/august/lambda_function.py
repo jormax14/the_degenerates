@@ -34,7 +34,7 @@ def close(session_attributes, fulfillment_state, message):
 #   CUSTOM FUNCTIONS
 
 def buildTeamDF(teamID):
-    fixture_columns = ['fixture_id','h_result', 'event_date', 'venue', 'h_team', 'a_team', 'h_halftime_score', 'a_haftime_score', 'h_fulltime_score', 'a_fulltime_score','h_shot_on_goal','a_shot_on_goal','h_shot_off_goal','a_shot_off_goal','h_total_shots','a_total_shots','h_blocked_shots','a_blocked_shots','h_shots_inside_box','a_shots_inside_box','h_shots_outside_box','a_shots_outside_box','h_fouls','a_fouls','h_corner_kicks','a_corner_kicks','h_offsides','a_offsides','h_ball_possession','a_ball_possession','h_yellow_cards','a_yellow_cards','h_red_cards','a_red_cards','h_goalkeeper_saves','a_goalkeeper_saves','h_total_passes','a_total_passes','h_accurate_passes','a_accurate_passes','h_pass_percentage','a_pass_percentage']
+    fixture_columns = ['fixture_id', 'event_date', 'venue', 'h_team', 'a_team', 'h_halftime_score', 'a_haftime_score', 'h_fulltime_score', 'a_fulltime_score','h_shot_on_goal','a_shot_on_goal','h_shot_off_goal','a_shot_off_goal','h_total_shots','a_total_shots','h_blocked_shots','a_blocked_shots','h_shots_inside_box','a_shots_inside_box','h_shots_outside_box','a_shots_outside_box','h_fouls','a_fouls','h_corner_kicks','a_corner_kicks','h_offsides','a_offsides','h_ball_possession','a_ball_possession','h_yellow_cards','a_yellow_cards','h_red_cards','a_red_cards','h_goalkeeper_saves','a_goalkeeper_saves','h_total_passes','a_total_passes','h_accurate_passes','a_accurate_passes','h_pass_percentage','a_pass_percentage']
     url_addr = f"https://api-football-v1.p.rapidapi.com/v2/fixtures/team/{teamID}/2790"
     headers = {
         'x-rapidapi-key': "3e890f9c4fmshbac87f967184a81p162525jsn1b11c02653ba",
@@ -51,11 +51,8 @@ def buildTeamDF(teamID):
             stat_data = requests.request("GET", url_stats, headers=headers)
             stat_json = stat_data.json()
             if r_json['api']['fixtures'][x]['score']['halftime'] and r_json['api']['fixtures'][x]['score']['fulltime'] != None:
-                h_ft_score = int(r_json['api']['fixtures'][x]['score']['fulltime'].split('-')[0])
-                a_ft_score = int(r_json['api']['fixtures'][x]['score']['fulltime'].split('-')[1])
                 tdf = {
                     'fixture_id': fixture_id,
-                    'h_result': determineIfWinner(h_ft_score, a_ft_score),
                     'event_date': r_json['api']['fixtures'][x]['event_date'],
                     'venue': r_json['api']['fixtures'][x]['venue'],
                     'h_team': r_json['api']['fixtures'][x]['homeTeam']['team_id'],
@@ -157,8 +154,8 @@ def getNamefromId(idnum):
 
 
 def cleanDF(df, id):
-    h_drop = ['Unnamed: 0','fixture_id','h_result','event_date','venue','a_team','h_team', 'a_haftime_score', 'a_fulltime_score','a_shot_on_goal','a_shot_off_goal','a_total_shots','a_blocked_shots','a_shots_inside_box','a_shots_outside_box','a_fouls','a_corner_kicks','a_offsides','a_ball_possession','a_yellow_cards','a_red_cards','a_goalkeeper_saves','a_total_passes','a_accurate_passes','a_pass_percentage']
-    a_drop = ['Unnamed: 0','fixture_id','h_result','event_date','venue','h_team','a_team','h_halftime_score', 'h_fulltime_score', 'h_shot_on_goal','h_shot_off_goal','h_total_shots','h_blocked_shots','h_shots_inside_box','h_shots_outside_box','h_fouls','h_corner_kicks','h_offsides','h_ball_possession','h_yellow_cards','h_red_cards','h_goalkeeper_saves','h_total_passes','h_accurate_passes','h_pass_percentage']
+    h_drop = ['Unnamed: 0','fixture_id','event_date','venue','a_team','h_team', 'a_haftime_score', 'a_fulltime_score','a_shot_on_goal','a_shot_off_goal','a_total_shots','a_blocked_shots','a_shots_inside_box','a_shots_outside_box','a_fouls','a_corner_kicks','a_offsides','a_ball_possession','a_yellow_cards','a_red_cards','a_goalkeeper_saves','a_total_passes','a_accurate_passes','a_pass_percentage']
+    a_drop = ['Unnamed: 0','fixture_id','event_date','venue','h_team','a_team','h_halftime_score', 'h_fulltime_score', 'h_shot_on_goal','h_shot_off_goal','h_total_shots','h_blocked_shots','h_shots_inside_box','h_shots_outside_box','h_fouls','h_corner_kicks','h_offsides','h_ball_possession','h_yellow_cards','h_red_cards','h_goalkeeper_saves','h_total_passes','h_accurate_passes','h_pass_percentage']
     new_columns = ['halftime_score', 'fulltime_score', 'shot_on_goal','shot_off_goal','total_shots','blocked_shots','shots_inside_box','shots_outside_box','fouls','corner_kicks','offsides','ball_possession','yellow_cards','red_cards','goalkeeper_saves','total_passes','accurate_passes','pass_percentage','home_field']
     h_clean_df = df.where(df['h_team'] == id)
     h_clean_df['a_pass_percentage'] = h_clean_df['a_pass_percentage'].str.strip('%')
