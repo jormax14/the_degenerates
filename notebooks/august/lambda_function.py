@@ -2,8 +2,7 @@ import pandas as pd
 import numpy as np 
 import requests, json
 from pathlib import Path 
-from os import listdir
-from os.path import isfile, join
+
 
 
 # DIALOG ACTION HELPERS
@@ -16,7 +15,6 @@ def close(session_attributes, fulfillment_state, message):
     """
     Defines a close slot type response.
     """
-
     response = {
         "sessionAttributes": session_attributes,
         "dialogAction": {
@@ -25,7 +23,6 @@ def close(session_attributes, fulfillment_state, message):
             "message": message,
         },
     }
-
     return response
 
 
@@ -98,7 +95,6 @@ def buildTeamDF(teamID):
             else:
                 tdf = {
                     'fixture_id': fixture_id,
-                    'h_result': determineIfWinner(h_ft_score, a_ft_score),
                     'event_date': r_json['api']['fixtures'][x]['event_date'],
                     'venue': r_json['api']['fixtures'][x]['venue'],
                     'h_team': r_json['api']['fixtures'][x]['homeTeam']['team_id'],
@@ -108,6 +104,12 @@ def buildTeamDF(teamID):
         return fixtures_df.dropna(inplace=True)
     else:
         return 'sorry, no results for that team...'
+
+
+def gatherData(t_id):
+    df = pd.read_csv(f"{t_id}_2020.csv")
+    df = df.dropna()
+    return df
 
 
 
@@ -153,16 +155,16 @@ def getNamefromId(idnum):
 
 
 
-def cleanDF(df, id):
+def cleanDF(df, t_id):
     h_drop = ['Unnamed: 0','fixture_id','event_date','venue','a_team','h_team', 'a_haftime_score', 'a_fulltime_score','a_shot_on_goal','a_shot_off_goal','a_total_shots','a_blocked_shots','a_shots_inside_box','a_shots_outside_box','a_fouls','a_corner_kicks','a_offsides','a_ball_possession','a_yellow_cards','a_red_cards','a_goalkeeper_saves','a_total_passes','a_accurate_passes','a_pass_percentage']
     a_drop = ['Unnamed: 0','fixture_id','event_date','venue','h_team','a_team','h_halftime_score', 'h_fulltime_score', 'h_shot_on_goal','h_shot_off_goal','h_total_shots','h_blocked_shots','h_shots_inside_box','h_shots_outside_box','h_fouls','h_corner_kicks','h_offsides','h_ball_possession','h_yellow_cards','h_red_cards','h_goalkeeper_saves','h_total_passes','h_accurate_passes','h_pass_percentage']
     new_columns = ['halftime_score', 'fulltime_score', 'shot_on_goal','shot_off_goal','total_shots','blocked_shots','shots_inside_box','shots_outside_box','fouls','corner_kicks','offsides','ball_possession','yellow_cards','red_cards','goalkeeper_saves','total_passes','accurate_passes','pass_percentage','home_field']
-    h_clean_df = df.where(df['h_team'] == id)
+    h_clean_df = df.where(df['h_team'] == t_id)
     h_clean_df['a_pass_percentage'] = h_clean_df['a_pass_percentage'].str.strip('%')
     h_clean_df['a_ball_possession'] = h_clean_df['a_ball_possession'].str.strip('%')
     h_clean_df.dropna(inplace=True)
-    h_clean_df.drop(columns=a_drop, inplace=True)
-    a_clean_df = df.where(df['a_team'] == id)
+    h_clean_df.drop(columns=h_drop, inplace=True)
+    a_clean_df = df.where(df['a_team'] == t_id)
     a_clean_df['a_pass_percentage'] = a_clean_df['a_pass_percentage'].str.strip('%')
     a_clean_df['a_ball_possession'] = a_clean_df['a_ball_possession'].str.strip('%')
     a_clean_df.dropna(inplace=True)
@@ -239,17 +241,22 @@ def determineWinner(h_df, a_df, h_id, a_id):
 
 def getPridection(intent_request):
     req_team = get_slots(intent_request)['Teams']
+    print(getIdFromName(req_team))
     fixture_info = getNextFixture(getIdFromName(req_team))
     # get season stats
-    h_df = buildTeamDF(fixture_info['home_team_id'])
-    a_df = buildTeamDF(fixture_info['away_team_id'])
+    print(fixture_info)
+    h_df = gatherData(fixture_info['home_team_id'])
+    a_df = gatherData(fixture_info['away_team_id'])
     h_clean = cleanDF(h_df, int(fixture_info['home_team_id']))
     a_clean = cleanDF(a_df, int(fixture_info['away_team_id']))
+    print("about to determine winner")
+    determineWinner(h_clean, a_clean, int(fixture_info['home_team_id']), int(fixture_info['away_team_id']))
 
 
 ## Intents Dispatcher
 def dispatch(intent_request):
     intent_name = intent_request['currentIntent']['name']
+    print(intent_name)
 
     if intent_name == 'WhichGame':
         return getPridection(intent_request)
